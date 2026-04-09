@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proposal generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <h2>💖 Love Card Generator</h2>
+    <input type="file" id="imageInput" accept="image/*" />
+    <br /><br />
+    <input type="text" id="nameInput" placeholder="Enter her name bro 🌹" />
+    <br /><br />
+    <select id="fontSelect" onchange="changeFont()">
+      <option value="Arial">Simple</option>
+      <option value="cursive">Romantic</option>
+      <option value="monospace">classic</option>
+    </select>
+    <div id="card">
+      <div id="overlay">
+        <span id="proposalText">click" Get proposal"</span>
+      </div>
+    </div>
+    <div class="buttons">
+      <button onclick="generate()">Get Proposal</button>
+      <button onclick="downloadImage()">Download</button>
+      <button onclick="share()">Share</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
