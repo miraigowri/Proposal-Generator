@@ -40,7 +40,7 @@ let bg = [
   "p39.jpg",
   "p40.jpg",
   "p41.jpg",
-  "  p42.jpg",
+  "p42.jpg",
 ];
 
 let templates = [
